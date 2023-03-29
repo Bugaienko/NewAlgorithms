@@ -6,18 +6,17 @@ import java.util.TreeMap;
 
 public class Compress {
     public static void main(String[] args) {
-        String text = """
-                A team of researchers led by Cambridge University 
-                analysed five locks of hair to sequence the composer's genome.
-                They were, however, unable to establish a definitive cause of his hearing loss.
-
-                Lead author, Tristan Begg, said genetic risk factors, coupled with 
-                Beethoven's high alcohol consumption, may have contributed to his liver condition.
-
-                The international team analysed strands from eight locks of hair kept 
-                in public and private collections, in a bid to shed light on Beethoven's health problems.
-
-                Five locks were deemed "authentic" by the researchers and came from a single European male.""";
+        String text = "A team of researchers led by Cambridge University \n" +
+                "                analysed five locks of hair to sequence the composer's genome.\n" +
+                "                They were, however, unable to establish a definitive cause of his hearing loss.\n" +
+                "\n" +
+                "                Lead author, Tristan Begg, said genetic risk factors, coupled with \n" +
+                "                Beethoven's high alcohol consumption, may have contributed to his liver condition.\n" +
+                "\n" +
+                "                The international team analysed strands from eight locks of hair kept \n" +
+                "                in public and private collections, in a bid to shed light on Beethoven's health problems.\n" +
+                "\n" +
+                "                Five locks were deemed \"authentic\" by the researchers and came from a single European male.";
 
         String milk = "MOLOKO";
     }
