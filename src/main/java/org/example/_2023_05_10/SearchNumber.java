@@ -17,8 +17,15 @@ public class SearchNumber {
                     {18, 21, 23, 26, 30, 36}};
 
     public static void main(String[] args) {
-        int searchingNumber = 13;
-        System.out.println(Arrays.toString(searchNumber(searchingNumber)));
+        int searchingNumber = 14;
+//        System.out.println(Arrays.toString(searchNumber(searchingNumber)));
+
+        int[][] A = {{1,2,3,4},
+                {5,6,7,8},
+                {9,10,11,12},
+                {13,14,15,16}};
+        System.out.println(Arrays.deepToString(A));
+        rotateMatrix(A);
     }
 
     private static int[] searchNumber(int searchingNumber) {
@@ -51,5 +58,16 @@ public class SearchNumber {
             System.out.println(y);
             y--;
         }
+    }
+
+    private static void rotateMatrix(int[][] array) {
+        int len = array.length;
+        int[][] newMatrix =new int[array.length][array[0].length];
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < len; j++) {
+                newMatrix[(len - 1) -j ][i] = array[i][j];
+            }
+        }
+        System.out.println(Arrays.deepToString(newMatrix));
     }
 }
